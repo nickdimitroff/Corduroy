@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from typing import Optional, List
+from typing import List, Optional
+
 import matplotlib.pyplot as plt
 import networkx
 
@@ -58,6 +59,16 @@ def build_graph(listOfDevices) -> List[str]:
             for cord in d.cords:
                 G.add_edge(d.name, cord, weight=1)
     return(G)
+
+def get_devices(somelist):
+    devices = []
+    with open("data/devices.txt") as input:
+        for line in input:
+            line = line.strip()
+            for item in somelist:
+                if item in line:
+                    devices.append(eval(line))
+    return(devices)
 
 def display(G):
     networkx.draw(G, networkx.planar_layout(G), with_labels=True)
