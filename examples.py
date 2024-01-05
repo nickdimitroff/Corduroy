@@ -1,5 +1,4 @@
-import corduroy
-from corduroy import build_graph
+from corduroy import *
 from typing import List
 
 

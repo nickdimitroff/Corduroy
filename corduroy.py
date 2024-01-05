@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from typing import Optional, List
 import matplotlib.pyplot as plt
-import itertools
 import networkx
 
 PERIPHERAL_DEFAULT_CORD = "USB-A"
@@ -73,4 +72,3 @@ def display(G):
     ax.margins(0.50)
     plt.axis("off")
     plt.show()
-
