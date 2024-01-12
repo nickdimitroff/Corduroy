@@ -41,6 +41,12 @@ class Cord:
     cords: List[str]
     name: str = "cord"
 
+@dataclass
+class Device:
+    name: str = "other_device"
+    cords: List[str] = None
+    ports: List[str] = None
+
 def build_graph(listOfDevices) -> List[str]:
     ret: List = []
     # MultiGraph to allow parallel edges
@@ -69,6 +75,13 @@ def get_devices(somelist):
                 if item in line:
                     devices.append(eval(line))
     return(devices)
+
+def segments(G):
+    for source in G:
+        for target in G:
+          z = networkx.all_simple_paths(G, source, target)
+    for a in z:
+        print(a)
 
 def display(G):
     networkx.draw(G, networkx.planar_layout(G), with_labels=True)

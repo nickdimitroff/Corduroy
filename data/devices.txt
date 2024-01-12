@@ -1,5 +1,5 @@
 Mouse(name="usb mouse", cord="USB-A")
 Keyboard(name="usb keyboard", cord="USB-A")
 Computer(name="test laptop", ports=["USB-A", "USB-A", "USB-C"])
-Monitor(name="test monitor", ports=["USB-C", "Thunderbolt"])
+Monitor(name="test monitor", ports=["USB-C", "Thunderbolt__in", "Thunderbolt__out])
 Cord(name="usb cord", cords=["USB-C", "USB-C"])
