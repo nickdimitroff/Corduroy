@@ -3,3 +3,4 @@ Keyboard(name="usb keyboard", cord="USB-A")
 Computer(name="test laptop", ports=["USB-A", "USB-A", "USB-C"])
 Monitor(name="test monitor", ports=["USB-C", "Thunderbolt__in", "Thunderbolt__out])
 Cord(name="usb cord", cords=["USB-C", "USB-C"])
+Device(name="Tesla 2023 Model 3), ports=["USB-C", "USB-C", "USB-A"]
